@@ -1,7 +1,7 @@
 import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity()
-export class Schedules {
+export class Schedule {
     @PrimaryGeneratedColumn('uuid')
     id: string;
     @Column()
@@ -12,4 +12,6 @@ export class Schedules {
     interval: number;
     @Column()
     timeUnit: string
+    @Column()
+    totalCount: number
 }
